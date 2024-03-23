@@ -1,0 +1,124 @@
+## What is Git ?
+Git is a software where we can manage/ store the source code
+
+## GUI (graphical user interface) and CLI (command line interface)
+CLI :-
+Whatever the changes are made in the machine are done by writing the command.
+For example : when we type "mkdir DEMO" in the command prompt of git, it creates the new folder in the desktop having name "DEMO".
+
+GUI :-
+Whatever the changes are made in the machine by using clicks/ visual.
+
+NOTE:
+Git bash command prompt is not case sensitive. We can write in capital letter as well as smaller letter
+
+## Installing the git :-
+
+- Going in chrome and downloading git bash
+- Run git bash app
+
+## Commands on git bash
+
+- "cd desktop" selecting the place where we want to go
+- desktop path is open and then typing "mkdir DEMO" DEMO name directory(folder) is created.
+- "cd --" we move back to start path
+- "cd .." we move back to previous directory
+- We can access drivers by "cd c:" here we can access "c" drive (we dont need to write name provided to drive, simply type c,d,e,f drive).
+- typing "ls" we can see what are the available directories/files or place we can go.
+- "touch <file_name.extension>" creates file. 
+   [ by default touch make .txt file]
+- "rm filename.extension" is used to delete file 
+- "rmdir folder_name" is used to delete folder or directory. [ directory must be empty before deleting]
+   {Deleted file or folder are stored in recycle bin}
+- To retore the file or folder use "git restore filename".
+- "nano <file_name.extension>" is used to write on the file.[It creates file if file doesn't exist]
+- "cat <file_name.extension>" is used to view the file content.
+- "git init" it is used to push the folder to the git[Initialized empty Git repository].
+- "git add <filename.extension>" it push the file in git and tracks that file.
+   [ Note: <filename.extension> should present in folder]
+- "git add ." all the files get push and tracked.
+- "git status" it shows which file are tracked in git and which file is not tracked in git from folder.
+- "git commit -m <write message within "">" this is used to save our track file in git.
+- sometimes we get author identity error, to overcome with it use:-
+  "git config --global user.email "mailID"
+   git config --global user.name "name" "
+   here we provide author to the git.
+- "git rm --cached <filename.extension>" is used to untrack or pull the file from the git.
+- "git log" we get unique id of each commit we maded.
+
+Lifecycle of github:-
+1. using "git init" we go to git.
+2. using "git add" we get file into stagging stage.
+3. using "git commit -m "message"" we commit file to git.
+
+How to add file in GITHUB account:-
+1. Open new repository in github.
+2. Open the vscode and open new folder in it.
+3. Open the Terminal in vscode, copy the code given in github repository 
+  	" git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin <folder_path>.git
+	git push -u origin main "
+   to the terminal,
+4. using "git add" add the file we want to add in github.
+5. typing "git comment -m "message" " we commit it
+6. after typing "git push" we push the file in github.
+
+# PUSH:-
+To push the file and changes in the file to the github:-
+Follow this steps always:-
+1. "git add."
+2. "git commit -m "message" "
+3. "git push"
+
+How to download the repository in system:-
+We can download the repository:
+Open github repository , click on code get https of it.
+1. "git clone <url path of repository from github>"
+2. "cd <name of repository>"
+3. "code ." it will open studio where the data of repository is.
+
+# PULL:-
+It is the process of pulling the file/data from repository where user is collaborator/collaborated in that repository.
+It means that when user is collaborated in the particular repository, then only he/she can pull the data
+Using "git pull" he/she will able to pull the file.
+In git pull, it shows that which of the commits are added into the git repository and updates the file.
+
+Note:
+Using "git checkout" to check the file is updated or not, if not it will update.
+
+# MERGE CONFLICT:-
+
+Let's suppose we are working in a file called as index.html,
+We make a change on line number 8.
+
+There is a collaborator, who was working on the same project as us also made a change in index.html and that too on same line.
+
+Now, github will get confused on whose code to consider and whose code not to consider.
+
+In this case, we tend to get a conflict and that is called as MERGE CONFLICT.
+
+# BRANCH
+
+"git branch"
+This command will tell us correctly which branch are we working on.
+NOTE: the default branch is MAIN branch. 
+
+To make a new branch we have a command called "git checkout -b <name of branch>"
+"b" stand for build.
+Using "git branch <name of branch> " to switch the branch.
+
+# PAGE HOSTING
+
+1. Open github.
+2. Open repository.
+3. click on setting.
+4. click on pages.
+5. In the branch option select the main branch.
+6. Click on "deploy from the branch" button.
+7. Wait for 5 mins, refresh the url.
+ Message will be display that the page is online, click on that link, your page will be live, we can share to anyone, that will able to use that url link.
+
+ 
